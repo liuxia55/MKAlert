@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'MKAlert'
-s.version          = '1.0.0'
+s.version          = '1.0.1'
 s.summary          = 'MKAlert'
 s.description      = <<-DESC
 MKAlert是一个弹出提示框工具。

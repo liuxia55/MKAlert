@@ -10,7 +10,6 @@
 #import "MKShowView.h"
 #import "MKShowTextView.h"
 #import "MKShowImportView.h"
-#import "AppDelegate.h"
 #import "MKShowImportView.h"
 #import "MKShowMultipleButtonView.h"
 #import "MKShowMultipleImportView.h"
@@ -417,8 +416,7 @@ SINGLETON_IMPLEMENTATION(singleton)
 
 + (nonnull UIView *)getRootView {
     //获取最初界面
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    UIView *view = appDelegate.window.viewForLastBaselineLayout;
+    UIView *view = [UIApplication sharedApplication].keyWindow.viewForLastBaselineLayout;
     return view;
 }
 
